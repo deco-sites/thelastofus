@@ -42,7 +42,6 @@ function CardText(
       class={`flex flex-col  ${
         alignment === "center" ? "text-center" : "text-left"
       }`}
-      
     >
       {tag && <div class="text-sm text-primary">{tag}</div>}
       {label && <h3 class="text-lg text-base-content">{label}</h3>}

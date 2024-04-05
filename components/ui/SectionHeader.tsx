@@ -46,7 +46,7 @@ function Header(props: Props) {
                     props.colorReverse
                       ? "text-primary-content"
                       : "text-base-content",
-                      "text-xl mt-4 w-1/2 mx-auto"
+                    "text-xl mt-4 w-1/2 mx-auto",
                   )}
                 >
                   {props.description}

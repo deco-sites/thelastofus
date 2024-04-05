@@ -44,12 +44,12 @@ function Navbar(
         }`}
       >
         {logo && (
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={logo.width || 100}
-              height={logo.height || 13}
-            />
+          <Image
+            src={logo.src}
+            alt={logo.alt}
+            width={logo.width || 100}
+            height={logo.height || 13}
+          />
         )}
       </div>
       <div class="flex-none flex items-center justify-end gap-6 col-span-1">
