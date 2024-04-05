@@ -323,7 +323,6 @@ function Footer({
             <Divider />
             <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center">
               {_logo}
-              <PoweredByDeco />
             </div>
           </div>
         )}
@@ -342,7 +341,6 @@ function Footer({
             </div>
             <Divider />
             <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10 md:items-center">
-              <PoweredByDeco />
               <div class="flex flex-col md:flex-row gap-10 md:items-center">
                 {_links}
                 {_region}

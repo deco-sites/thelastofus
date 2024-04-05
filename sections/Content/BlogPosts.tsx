@@ -31,7 +31,7 @@ export interface Post {
 }
 
 function BlogPosts({
-  title = "BlogPosts",
+  title = "",
   layout = {
     numberOfSliders: {
       mobile: 1,
@@ -75,10 +75,6 @@ function BlogPosts({
   ],
 }: Props) {
   const id = useId();
-
-  if (!posts || posts.length === 0) {
-    return null;
-  }
   const slideDesktop = {
     1: "md:w-full",
     2: "md:w-1/2",
@@ -122,10 +118,10 @@ function BlogPosts({
   );
 
   return (
-    <div class="w-full container py-8 flex flex-col gap-6 pb-16">
+    <div class="w-full container py-8 flex flex-col gap-6 pb-8">
       <div class="px-9">
         <Header
-          title={title || "BlogPosts"}
+          title={title}
           fontSize={layout?.headerfontSize || "Normal"}
           alignment={layout?.headerAlignment || "center"}
         />

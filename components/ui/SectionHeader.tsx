@@ -10,7 +10,7 @@ export interface Props {
 
 const fontSizeClasses = {
   "Small": "lg:text-2xl",
-  "Normal": "lg:text-3xl",
+  "Normal": "lg:text-4xl",
   "Large": "lg:text-4xl",
 };
 
@@ -28,7 +28,7 @@ function Header(props: Props) {
               (
                 <h1
                   class={clx(
-                    "text-2xl font-light leading-8 lg:leading-10",
+                    "text-5xl leading-8 lg:leading-10 font-bold",
                     props.colorReverse
                       ? "text-primary-content"
                       : "text-base-content",
@@ -46,7 +46,7 @@ function Header(props: Props) {
                     props.colorReverse
                       ? "text-primary-content"
                       : "text-base-content",
-                    fontSizeClasses[props.fontSize || "Normal"],
+                      "text-xl mt-4 w-1/2 mx-auto"
                   )}
                 >
                   {props.description}

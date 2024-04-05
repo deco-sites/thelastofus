@@ -82,21 +82,6 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
       >
         {children}
       </Drawer>
-      <Drawer // right drawer
-        class="drawer-end"
-        open={displayCart.value !== false}
-        onClose={() => displayCart.value = false}
-        aside={
-          <Aside
-            title="Minha sacola"
-            onClose={() => displayCart.value = false}
-          >
-            <Cart platform={platform} />
-          </Aside>
-        }
-      >
-        {children}
-      </Drawer>
     </>
   );
 }

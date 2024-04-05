@@ -39,9 +39,10 @@ function CardText(
 ) {
   return (
     <div
-      class={`flex flex-col ${
+      class={`flex flex-col  ${
         alignment === "center" ? "text-center" : "text-left"
       }`}
+      
     >
       {tag && <div class="text-sm text-primary">{tag}</div>}
       {label && <h3 class="text-lg text-base-content">{label}</h3>}
@@ -118,7 +119,8 @@ function CategoryList(props: Props) {
   return (
     <div
       id={id}
-      class="container py-8 flex flex-col gap-8 lg:gap-10 text-base-content  lg:py-10"
+      class="container py-8 flex flex-col justify-center gap-8 lg:gap-10 text-base-content relative lg:py-10 mb-48"
+      style="box-shadow: 0 0 300px 220px #060505; z-index: 3"
     >
       <Header
         title={header.title}
@@ -126,7 +128,7 @@ function CategoryList(props: Props) {
         alignment={layout.headerAlignment || "center"}
       />
 
-      <Slider class="carousel carousel-start gap-4 lg:gap-8 row-start-2 row-end-5">
+      <Slider class="carousel carousel-start flex justify-center gap-4 lg:gap-8 row-start-2 row-end-5">
         {list.map((
           { tag, label, description, href, image, buttonText },
           index,
