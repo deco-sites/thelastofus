@@ -132,7 +132,7 @@ function BlogPosts({
           layout?.showArrows ? "grid-cols-[48px_1fr_48px]" : ""
         } px-6 container`}
       >
-        <Slider class="carousel carousel-center sm:carousel-end row-start-2 row-end-5">
+        <Slider class="carousel block lg:flex carousel-center sm:carousel-end row-start-2 row-end-5">
           {posts?.map((post, index) => (
             <Slider.Item
               index={index}

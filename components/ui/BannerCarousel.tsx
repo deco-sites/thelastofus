@@ -119,8 +119,8 @@ function BannerItem(
       class="relative overflow-y-hidden w-full"
     >
       {action && (
-        <div class="absolute top-0 bottom-1/4 left-0 right-0 sm:right-auto max-w-[670px] flex flex-col justify-end gap-4 px-8 py-12 z-50">
-          <span class="text-2xl font-medium leading-9 text-slate-50">
+        <div class="absolute top-0 bottom-0 lg:bottom-1/4 left-0 right-0 sm:right-auto max-w-[670px] flex flex-col justify-end gap-4 px-8 py-12 z-50">
+          <span class="text-lg lg:text-2xl font-medium leading-9 text-slate-50">
             {action.title}
           </span>
           <span class="font-normal text-4xl text-slate-50">
